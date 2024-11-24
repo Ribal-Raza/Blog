@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Image from "./Image";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -7,7 +8,7 @@ const Navbar = () => {
     <div className="w-full h-16 md:h-20 flex items-center justify-between">
       {/* LOGO */}
       <div className="flex items-center gap-4 text-2xl font-bold">
-        <img src="/logo.png" className="w-8 h-8" />
+        <Image path={"logo.png"} alt={"B-log_logo"} width={32} height={32} />
         <span>B-log</span>
       </div>
       {/* MOBILE MENU */}
